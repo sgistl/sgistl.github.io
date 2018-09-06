@@ -220,7 +220,7 @@ is changing the top-level function to
     template &lt;class <A href="BidirectionalIterator.html">BidirectionalIterator</A>&gt;
     inline void <A href="reverse.html">reverse</A>(BidirectionalIterator first, BidirectionalIterator last) {
 	__reverse(first, last, 
-                  <A href="iterator_traits.html">iterator_traits</A>&lt;first&gt;::iterator_category());
+                  <A href="iterator_traits.html">iterator_traits</A>&lt;BidirectionalIterator&gt;::iterator_category());
     }
 </pre>
 <h3>Concepts</h3>
